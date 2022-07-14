@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ex1.js" defer></script>
+    <script type="text/javascript" src="config/MathJax.js"></script>
+    
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<style>
+    body {
+  --bs-body-font-family: var(--bs-font-monospace);
+  --bs-body-line-height: 1.4;
+  --bs-body-bg: var(--bs-gray-100);
+}
+.card-text{
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    background-color: rgb(254, 231, 240);
+    padding: 20px;
+    margin-left: 25%;
+}
+p{
+    margin-top: 14%;
+}
+h1{
+    font-size: 50px;
+}
+
+
+</style>
+    <title>Document</title>
+</head>
+<body>
+
+
+<p></p>
+ <h1 class="text-center"> Recurrence sequence</h1>
+<div class="text-center" >
+    <div class= "card-text">
+ <form class="formulaire" action="./reponse.php" method="post">
+    $U_n=$ <input type="text" name="a" id="a"> $U_{n-1}$ +  <input type="text" name="b" id="b"> $U_{n-2}$
+    <br> <br>
+    $U_0=$ <input type="text" name="U0" id ="u0">
+    <br> <br>
+    $U_1=$ <input type="text" name="U1" id="u1">
+    <br> <br>
+    <!-- <input onclick="loadDoc()" type="submit" class="btn btn-secondary btn_lg" > -->
+    <button type="button" class="btn btn-secondary btn_lg" name="envoyer"  onclick="loadDoc()">Calculate</button>
+ </form>
+ <br><br> 
+ <div id="demo" class="fs-bold"></div>
+ 
+
+ </div>
+ </div>
+
+</body>
+</html>
+
